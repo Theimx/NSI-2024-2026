@@ -2,7 +2,8 @@
 **Version : Python 3.11.9**  
 **Software Version : 1.0**  
 **AI : No AI used**   
-**File : 15 Python File**  
+**File : 15 Python files**  
+**Line : 1944 lines**
   
 ---
 ### *Description* :   
