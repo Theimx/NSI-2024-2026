@@ -2,10 +2,14 @@
 **Version : Python 3.11.9**  
 **Software Version : 1.0**  
 **AI : No AI used**   
-  
-Description :  
+
+---
+### *Description* :   
 Programme de NSI 1ERE et TERMINAL (2024-2026).  
 
+      
+---
+### *Content* :  
 Content :  
 NSI-LESSON-I.py : 673  lines  
 NSI-LESSON-II.py : 160  lines  
