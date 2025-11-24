@@ -184,3 +184,74 @@ def palindrome(txt):
 # ----------------------------------------------------------
 # CHAPITRE 3 : NOTIONS SUR LES PILES ET LES FILES
 # ----------------------------------------------------------
+
+# une implémentation du type Pile en python avec la POO
+class Pile:
+
+    def __init__(self):
+        self.__pile = []  # attribut privé
+
+    def est_vide(self):
+        return self.__pile == []
+
+    def empiler(self, x):
+        self.__pile.append(x)
+
+    def depiler(self):
+        if self.est_vide():
+            raise IndexError("Impossible de dépiler : la pile est vide.")
+        return self.__pile.pop()
+
+    def hauteur(self):
+        return len(self.__file)
+
+    def afficher_pile(self):
+        print("^")
+        for x in reversed(self.__pile):
+            print(x)
+        print("—")
+        print("Pile de hauteur : " , hauteur(self.__pile))
+
+# une implémentation du type File en python avec la POO
+class File:
+    def __init__(self):
+        self.__file = []  # attribut privé
+
+    def est_vide(self):
+        return self.__file == []
+
+    def enfiler(self, x):
+        self.__file.append(x)
+
+    def defiler(self):
+        if not self.est_vide():
+            return self.__file.pop(0)
+        else:
+            print("ERREUR Impossible de défiler : la file est vide.")
+
+    def longeur(self):
+        return len(self.__file)
+
+    def afficher_file(self):
+        print("File de longeur : " , longeur(self.__file))
+        res = '>>> '
+        for x in reversed(self.__file):
+            res += str(x)
+            res += ' > '
+        
+        print(res)
+
+def test_file():
+    file = File()
+    for i in range(10): 
+        file.enfiler(i)
+
+    file.afficher_file()
+
+def test_pile():
+    pile = Pile()
+    for i in range(10): 
+        pile.empiler(i)
+
+    pile.afficher_pile()
+
