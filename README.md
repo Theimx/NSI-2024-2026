@@ -21,6 +21,7 @@ Programme de NSI 1ERE et TERMINAL (2024-2026).
 **TP-03-RPG-NSI.py** : 185  lines   
 **TP-04-Carte-NSI.py** : 1  lines   
 **TP-05-Pile-NSI.py** : 27  lines   
+**TP-P6-File-NSI.py** : 31 lines    
    
 **Evaluation-Python-NSI-01.py** : 110  lines   
 **Evaluation-Python-NSI-02.py** : 74  lines   
