@@ -1,27 +1,30 @@
-# une implémentation du type Pile en python avec la POO
+# --------------------------------------------
+# CHAPITRE 3 : TRAVAIL PRATIQUE SUR LES PILES 
+# --------------------------------------------
+
+
 class Pile:
-    """Classe modélisant le Type Pile a l'aide de la POO """ 
 
     def __init__(self):
-        """Fonction constructeur """
-        self.__pile = [] # __ donc attibut privé 
-
-    def creer_pile_vide():
-        return []
+        self.__pile = []  # attribut privé
 
     def est_vide(self):
-        """Renvoie TRUE si la Pile est vide """
-        return p == []
+        return self.__pile == []
 
-    def empiler(self,p,x):
-        """Empile l'élément x au sommet de la Pile """
-        p.append(x)
+    def empiler(self, x):
+        self.__pile.append(x)
 
-    def depiler(self,p):
-        assert( not est_vide(p))
-        return p.pop()
+    def depiler(self):
+        if self.est_vide():
+            raise IndexError("Impossible de dépiler : la pile est vide.")
+        return self.__pile.pop()
 
-    def afficher_pile_0(self):
+    def hauteur(self):
+        return len(self.__file)
+
+    def afficher_pile(self):
         print("^")
-        for k in range(1):
-            print("finir plus tard")
+        for x in reversed(self.__pile):
+            print(x)
+        print("—")
+        print("Pile de hauteur : " , hauteur(self.__pile))
