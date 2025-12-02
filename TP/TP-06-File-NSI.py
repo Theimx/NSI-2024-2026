@@ -24,7 +24,7 @@ class File:
 
     def afficher_file(self):
         print("File de longeur : " , longeur(self.__file))
-        res = '>>> '
+        res = '>> '
         for x in reversed(self.__file):
             res += str(x)
             res += ' > '

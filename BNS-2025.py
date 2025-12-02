@@ -230,9 +230,9 @@ def trouver_intrus(tab,g,d):
        tab verifie les conditions de l'exercice,
        g et d sont des multiples de 3."""
     if g == d:
-        return ...
+        return tab[g]
     else : 
-        nombre_de_triplets = (d - g) // ... # 3
+        nombre_de_triplets = (d - g) // 3
         indice = g + 3 * (nombre_de_triplet) 
         if ... :
             return ...

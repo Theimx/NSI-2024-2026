@@ -299,4 +299,7 @@ def list_dict2csv(td:list, nom_fichier_csv: str, sep:str ):
     f.close()
 
 #Une fonction qui transforme un CSV en une liste de Dictionnaire Python
+
 #Une fonction qui transforme une liste de Dictionnaire Python en CSV
+
+#Recoder la fonction Split(string,char) (créer une liste a partir d'une chaine chaque fois que le charactère cible est détécté)
