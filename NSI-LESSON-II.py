@@ -255,3 +255,48 @@ def test_pile():
 
     pile.afficher_pile()
 
+# ------------------------------------------------------------
+# CHAPITRE 4 : UTILISATION DE FICHIERS TEXTE ET CSV EN PYTHON
+# ------------------------------------------------------------
+
+#créer un fichier texte
+def create_texte_file(name: str):
+    file_name = name + ".txt"
+    file = open(name,"w",encoding="utf-8")
+    file.close
+
+#Renvoie le nombre de ligne non vide dans un fichier
+def compter_lignes(file_name):
+    count = 0
+    file = open(file_name,"r",encoding="utf-8")
+    line = file.readline()
+
+    while(line != "" ):
+        count += 1 
+        line = file.readline()
+    file.close()
+    return count
+
+def list_dict2csv(td:list, nom_fichier_csv: str, sep:str ):
+    f = open(nom_fichier_csv,"w",encoding="utf-8")
+    liste_champs = []
+    d = td[0]
+    for c in d:
+        liste_champs.append(c)
+    ligne_champs = ""
+    for i in range(0,len(liste_champs)-1):
+        ligne_champs = ligne_champs + liste_champs[i] + sep
+    ligne_champs = ligne_champs + liste_champs[len(liste_champs)-1] + "\n"
+    f.write(ligne_champs)
+    for d in td: 
+        ligne_d = ""
+        for i in range(0,len(liste_champs)-1):
+            donnee = d[liste_champs[i]]
+            ligne_d = ligne_d + str(donnee) + sep
+        donnee = d[liste_champs[len(liste_champs)-1]]
+        ligne_d = ligne_d + str(donnee) + "\n"
+        f.write(ligne_d)
+    f.close()
+
+#Une fonction qui transforme un CSV en une liste de Dictionnaire Python
+#Une fonction qui transforme une liste de Dictionnaire Python en CSV

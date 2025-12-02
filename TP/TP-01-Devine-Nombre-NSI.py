@@ -1,17 +1,12 @@
 import random
 
-#Introduction Français :
+#Introduction :
 #
 #
 #
 
-#Introduction English :
-#
-#
-#
 
-#
-#
+# Fonction pour choisir la difficulté de la partie 
 def choixNiveau():
     _choix = int(input("Choisi un niveau de difficulté entre 1 et 3 : "))
     if _choix == 1:
