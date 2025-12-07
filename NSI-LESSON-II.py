@@ -298,6 +298,7 @@ def list_dict2csv(td:list, nom_fichier_csv: str, sep:str ):
         f.write(ligne_d)
     f.close()
 
+
 #Une fonction qui transforme un CSV en une liste de Dictionnaire Python
 
 #Une fonction qui transforme une liste de Dictionnaire Python en CSV
@@ -308,3 +309,4 @@ def separation(chaine,target):
 
     return res
 
+# Une fonction aui analyse un fichier et qui t'en ressors le nombre de fois que le mot clef "def " apparait
