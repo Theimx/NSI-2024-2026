@@ -310,3 +310,8 @@ def separation(chaine,target):
     return res
 
 # Une fonction aui analyse un fichier et qui t'en ressors le nombre de fois que le mot clef "def " apparait
+
+
+# ------------------------------------------------------------
+# CHAPITRE 5 : NOTIONS SUR LES BASES DE DONNEES (BDD )
+# ------------------------------------------------------------
