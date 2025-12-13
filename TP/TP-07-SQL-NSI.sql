@@ -1,3 +1,9 @@
+
+  /*-------------------------------------------------------
+ CHAPITRE 3 : TRAVAIL PRATIQUE SUR LES BASES DE DONNEES
+ -------------------------------------------------------*/
+
+
 DROP TABLE IF EXISTS coordonnees;
 DROP TABLE IF EXISTS options;
 DROP TABLE IF EXISTS seconde;

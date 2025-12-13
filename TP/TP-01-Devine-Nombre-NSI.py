@@ -1,9 +1,10 @@
 import random
 
-#Introduction :
-#
-#
-#
+# Introduction :
+# Jeu de devinette de nombres
+# Le joueur choisit un niveau de difficulté qui définit la valeur maximale
+# Plusieurs joueurs peuvent jouer chacun leur tour
+# Chaque joueur dispose d’un nombre limité de tentatives pour deviner un nombre aléatoire
 
 
 # Fonction pour choisir la difficulté de la partie 
