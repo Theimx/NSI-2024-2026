@@ -7,7 +7,7 @@
   
 ---
 ### *Description* :   
-Programme de NSI 1ERE et TERMINAL (2024-2026).  
+Programme complet de 1ERE et TERMINAL NSI de 2024 à 2026.  
 
       
 ---
