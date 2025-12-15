@@ -1,9 +1,9 @@
-**Language : Python**  
+**Language : Python, SQL**  
 **Version : Python 3.11.9**  
 **Software Version : 1.0**  
 **AI : No AI used**   
-**File : 15 Python files**  
-**Line : 1944 lines**
+**File : 16 Python files ; 1 SQL file**  
+**Line : 2239 lines**
   
 ---
 ### *Description* :   
