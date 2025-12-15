@@ -21,7 +21,7 @@ Programme complet de 1ERE et TERMINAL NSI de 2024 à 2026.
 **TP-02-Foot-NSI.py** : 70  lines   
 **TP-03-RPG-NSI.py** : 185  lines   
 **TP-04-Carte-NSI.py** : 33  lines   
-**TP-05-Pile-NSI.py** : 30  lines   
+**TP-05-Pile-NSI.py** : 30  lines      
 **TP-P6-File-NSI.py** : 32 lines    
 **TP-07-SQL-NSI.sql** : 114  lines  
    
