@@ -92,16 +92,21 @@ def tour_de_jeu(sequence):
         c_joueur = saisie_joueur()
         c_seq = None
 
+# -------------------------------------------------
 # D.Sujet-Asie-journée 2-2024-Exercice-2 (6 points)
+# -------------------------------------------------
 
     # 1 : l'Expression  
 
-#A. Sujet Amérique du sud -journée 2-2022-Exercice 1 (4 points sur 12)
+# ---------------------------------------------------------------------
+# A. Sujet Amérique du sud -journée 2-2022-Exercice 1 (4 points sur 12)
+# ---------------------------------------------------------------------
+
 
 #B
 
 # ---------------------------------------
-# D.Sujet-zéro-2021-Exercice-4 (4 points)
+# A.Sujet-zéro-2021-Exercice-4 (4 points)
 # ---------------------------------------
 
 """ Question 1 : 
@@ -177,3 +182,15 @@ FROM Reservation,Train
 WHERE Reservation.numT = Train.numT AND nom = "Hopper" AND prenom = "Grace";
 
 """
+
+#
+# B. Sujet Métropole - journée 1 - 2021 - Exercice 3 (4 points )
+#
+
+#
+# C. Sujet Polynésie - journée 1 - 2023 - Exercice 1 (4 points)
+# 
+
+#
+# D. Sujet Amérique du sud - journée 2 - 2022 - Exercice 3 (4 points)
+#
