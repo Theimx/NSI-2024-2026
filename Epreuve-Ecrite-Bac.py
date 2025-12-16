@@ -161,4 +161,19 @@ UPDATE Train
 SET horaireArrivee = "08:11"
 WHERE numT = 7869;
 """
- 
+""" Question 4 : 
+    Cette requête renvoie le nombre de réservations éfféctués
+    par la cliente nommée Grace Hopper.
+"""
+""" Question 5 : 
+
+SELECT destination, prix
+FROM Reservation 
+JOIN Train ON Reservation.numT = Train.numT
+WHERE nom = "Hopper" AND prenom= Grace;
+
+SELECT destination,prix
+FROM Reservation,Train
+WHERE Reservation.numT = Train.numT AND nom = "Hopper" AND prenom = "Grace";
+
+"""
