@@ -1,3 +1,4 @@
-# Evaluation de de NSI du 07/10/2025 sur les Piles
+# Evaluation de de NSI du 06/11/2025 sur les Piles
 # Classe de Terminal 
-# Note : 17.5/20
+# Durée : 2h
+# Note : 20/20
