@@ -315,3 +315,9 @@ def separation(chaine,target):
 # ------------------------------------------------------------
 # CHAPITRE 5 : NOTIONS SUR LES BASES DE DONNEES (BDD )
 # ------------------------------------------------------------
+
+# ---------------------------------------------------------------------------------------------------
+# CHAPITRE 5.5 : INTEGRATION AVEC L'UTILISATEUR : MODULE POUR INTERFACE GRAPHIQUE TKINTER DE PYTHON 3 
+# ---------------------------------------------------------------------------------------------------
+
+# GUI = Graphical User Interface
