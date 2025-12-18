@@ -8,7 +8,7 @@
 ---
 ### *Description* :   
 Programme complet de 1ERE et TERMINAL NSI de 2024 à 2026.  
-Algoritmie; Syntaxe Python; Base de donnée relationelle; Syntaxe SQL; Programmation Orientée Objet; Structure de Données; Interfaces Graphique; Manipulation de fichier.   
+Algoritmie; Syntaxe Python; Base de donnée relationelle; Syntaxe SQL; Programmation Orientée Objet; Structure de Données; Interfaces Graphique; Manipulation de fichier; Notion de complexité.   
       
 ---
 ### *Content* :  
@@ -23,7 +23,8 @@ Algoritmie; Syntaxe Python; Base de donnée relationelle; Syntaxe SQL; Programma
 **TP-04-Carte-NSI.py** : 33  lines   
 **TP-05-Pile-NSI.py** : 30  lines      
 **TP-P6-File-NSI.py** : 32 lines       
-**TP-07-SQL-NSI.sql** : 114  lines     
+**TP-07-SQL-NSI.sql** : 114  lines    
+**TP-07-Requete-NSI.sql** : 20 lines    
    
 **Evaluation-Python-NSI-01.py** : 110  lines   
 **Evaluation-Python-NSI-02.py** : 74  lines   
