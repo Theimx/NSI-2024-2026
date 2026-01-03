@@ -1,7 +1,7 @@
 #  Liste des 48 sujets de la Banque National des Sujets, accessible
 #  librement au public pour le Bac 2025.
 #  Sujet complété (10/48): 
-#   13, 15, 18, 20, 21, 27, 29, 42, 44, 48 
+#  13, 15, 18, 20, 21, 27, 29, 42, 44, 48 
 #
 #  Sujet à complété (39/48): 
 #

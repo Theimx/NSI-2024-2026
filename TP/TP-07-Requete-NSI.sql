@@ -1,3 +1,7 @@
+/*-------------------------------------------------------
+ CHAPITRE 5 : TRAVAIL PRATIQUE SUR LES BASES DE DONNEES
+-------------------------------------------------------*/
+
 -- Question 7 page 23
 SELECT DISTINCT langue1 FROM seconde;
 
