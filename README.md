@@ -15,6 +15,7 @@ Algoritmie; Syntaxe Python; Base de donnée relationelle; Syntaxe SQL; Programma
 **NSI-LESSON-I.py** : 673  lines   
 **NSI-LESSON-II.py** : 257  lines     
 **BNS-2025.py** : 367  lines   
+**BNS-2026.py** : 84  lines   
 **Epreuve-Ecrite-Bac.py** : 79  lines
     
 **TP-01-Devine-Nombre-NSI.py** : 57  lines   
@@ -31,6 +32,7 @@ Algoritmie; Syntaxe Python; Base de donnée relationelle; Syntaxe SQL; Programma
 **Evaluation-Python-NSI-03.py** : 37  lines   
 **Evaluation-Python-NSI-04.py** : 55  lines   
 **Evaluation-Python-NSI-05.py** : 3  lines   
-**Evaluation-Python-NSI-06.py** : 3  lines  
+**Evaluation-Python-NSI-06.py** : 3  lines   
+**Evaluation-Python-NSI-07.py** : 3  lines  
      
 ---

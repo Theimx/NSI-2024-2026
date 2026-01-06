@@ -46,37 +46,38 @@ def determiner_phase(day):
 # print(determiner_phase(17))  --> 4
 # print(determiner_phase(100)) --> AssertionError: mauvais domaine de definition
 
-# Exercice 3 : jours dans mois : 
-def jours_dans_mois(annee, mois):
-    """Renvoie le nombre de jours dans un mois donné d'une année donnée.
-       Utilise le module calendar pour gérer les années bissextiles."""
-    if mois == 2:  # février
-        return 29 if est_bissextile(annee) else 28
-    elif mois in [1, 3, 5, 7, 8, 10, 12]:
-        return 31
-    else:
-        return 30
+# Exercice 3 : jours dans mois : A completer et a corriger
+def Exercice3():
+    def jours_dans_mois(annee, mois):
+        """Renvoie le nombre de jours dans un mois donné d'une année donnée.
+        Utilise le module calendar pour gérer les années bissextiles."""
+        if mois == 2:  # février
+            return 29 if est_bissextile(annee) else 28
+        elif mois in [1, 3, 5, 7, 8, 10, 12]:
+            return 31
+        else:
+            return 30
 
-def ajouter_jours(date, nb_jours):
-    """Ajoute nb_jours à une date donnée et renvoie la nouvelle date.
-       La date est représentée par un tuple (jour, mois, année)."""
-    jour, mois, annee = date
-    jour = jour + nb_jours
+    def ajouter_jours(date, nb_jours):
+        """Ajoute nb_jours à une date donnée et renvoie la nouvelle date.
+        La date est représentée par un tuple (jour, mois, année)."""
+        jour, mois, annee = date
+        jour = jour + nb_jours
 
-    # Ajustement du jour et du mois si dépassement
-    while jour > jours_dans_mois(annee, mois):
-        jour = jour - jours_dans_mois(annee, mois)
-        mois = mois + 1
-        if mois > 12:  # passage à l'année suivante
-            mois = 1
-            annee = annee + 1
+        # Ajustement du jour et du mois si dépassement
+        while jour > jours_dans_mois(annee, mois):
+            jour = jour - jours_dans_mois(annee, mois)
+            mois = mois + 1
+            if mois > 12:  # passage à l'année suivante
+                mois = 1
+                annee = annee + 1
 
-    return (jour, mois, annee)
+        return (jour, mois, annee)
 
-def test_ajouter_jours():
-    assert ajouter_jours((7, 9, 2025), 3) == (10, 9, 2025)
-    assert ajouter_jours((7, 9, 2025), 0) == (7, 9, 2025)
-    assert ajouter_jours((7, 9, 2025), 30) == (7, 10, 2025)
-    assert ajouter_jours((7, 9, 2025), 365) == (7, 9, 2026)
+    def test_ajouter_jours():
+        assert ajouter_jours((7, 9, 2025), 3) == (10, 9, 2025)
+        assert ajouter_jours((7, 9, 2025), 0) == (7, 9, 2025)
+        assert ajouter_jours((7, 9, 2025), 30) == (7, 10, 2025)
+        assert ajouter_jours((7, 9, 2025), 365) == (7, 9, 2026)
 
 #----------------------------------------------------------------------------------------------
