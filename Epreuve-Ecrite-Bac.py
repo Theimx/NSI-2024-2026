@@ -197,7 +197,48 @@ WHERE Reservation.numT = Train.numT AND nom = "Hopper" AND prenom = "Grace";
 # -------------------------------------------------------------
 # C. Sujet Polynésie - journée 1 - 2023 - Exercice 1 (4 points)
 # -------------------------------------------------------------
+"""
+Question 1:
+a) Expliquer pourquoi la requête suivante produit une erreur lors de
+l'ajout dans la table Equipe (voir docs):
 
+INSERT INTO Equipe
+VALUES (11,"Toulouse","2 rue du Nord, 40100 Dax", "05 04 03 02 01");
+
+-Dans cette requête d'inserstion d'un nouveau tuble, la valeur de clé primaire est 11;
+or celle-ci est déjà présente.L'erreur provient du non respect de l'unicité de la clé primaire.
+Rupture de l'unicité (l'id_equipe 11 est déjà présent dans la table).
+
+b) Justifier l'utilisation du type utilisé pour stocker l'attibut téléphone : 
+
+-Le choix d'un domaine (type) relatif aux chaines de charactères permet de conserver le 
+zéro en premier caractère et la présentation par blocs de 2 chiffres séparé par des 
+espaces.
+
+c) Donnez le résultat de la requête suivante : 
+SELECT nom, adresse, telephone FROM Equipe WHERE id_equipe = 5;
+
+-On obtient la vue : 
+("Lyon", "451 cours d'Emile Zola, 69100 Villerbanne" , "04 05 06 07 08" )
+
+d) Donner et expliquer le résultat de la requête suivante :
+SELECT COUNT(*) FROM Equipe;
+
+-La requête renvoie 12, car la requêtede sélection utilise la fonction d'aggrégation COUNT(),
+qui permet de dénombrer tous les tuples de données de la table Equipe.
+(Le paramètre * dans la fonction COUNT() indique que l'on prend en compte tous les attributs.)
+
+e) Ecrire la requête SQL permettant d'afficher les noms des équipes par ordre alphabétique : 
+
+SELECT nom FROM Equipe
+ORDER BY nom;
+
+f) Ecrire la requête permettant de corriger le nom de l'équipe dont l'id_equipe est 4 :
+
+UPDATE Equipe
+SET nom="Tarbes"
+WHERE id_equipe = 4;
+"""
 # -------------------------------------------------------------------
 # D. Sujet Amérique du sud - journée 2 - 2022 - Exercice 3 (4 points)
 # -------------------------------------------------------------------
