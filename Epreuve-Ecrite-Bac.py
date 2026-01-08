@@ -270,7 +270,21 @@ FROM Joueuse,Equipe
 WHERE Joueuse.id-equipe=Equipe.id-equipe
 AND Equipe.nom="Angers";
 """
+""" Question 3:
+a) Proposer un schéma relationel pour la table Match,préciser les clés étrangère si besoin:
 
+Match:
+id_match    --> INT (clé primaire)
+date_match  --> DATE
+#id_equipe1 --> INT (clé étrangère qui référence la clé primaire id-equipe de la table Equipe)
+#id_equipe2 --> INT (clé étrangère qui référence la clé primaire id-equipe de la table Equipe)
+score1      --> INT
+score2      --> INT
+
+b) Requête d'insertion:
+INSERT INTO Match(id_match,date_match,id_equipe1,id_equipe2,score1,score2)
+VALUES (10,"23/10/2021",3,6,73,78);
+"""
 # -------------------------------------------------------------------
 # D. Sujet Amérique du sud - journée 2 - 2022 - Exercice 3 (4 points)
 # -------------------------------------------------------------------
