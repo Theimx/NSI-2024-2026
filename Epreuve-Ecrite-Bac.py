@@ -197,10 +197,9 @@ WHERE Reservation.numT = Train.numT AND nom = "Hopper" AND prenom = "Grace";
 # -------------------------------------------------------------
 # C. Sujet Polynésie - journée 1 - 2023 - Exercice 1 (4 points)
 # -------------------------------------------------------------
-"""
-Question 1:
-a) Expliquer pourquoi la requête suivante produit une erreur lors de
-l'ajout dans la table Equipe (voir docs):
+""" Question 1:
+a)  Expliquer pourquoi la requête suivante produit une erreur lors de
+    l'ajout dans la table Equipe (voir docs):
 
 INSERT INTO Equipe
 VALUES (11,"Toulouse","2 rue du Nord, 40100 Dax", "05 04 03 02 01");
@@ -239,6 +238,39 @@ UPDATE Equipe
 SET nom="Tarbes"
 WHERE id_equipe = 4;
 """
+""" Question 2:
+a) Expliquer pourquoi id_equipe est t'il déclaré clé étrangère dans la nouvelle table Joueuse.id_equipe :
+
+-La clès étrangère Joueuse.id_equipe qui fait référence à la clè primaire Equipe.id-equipe permet de savoir
+à quelle équipe appartient une joueuse. (Pas d'ambiguité car la clé primaire est unique : Une joueuse appartient
+à une seule équipe.)
+
+b) Expliquer pourquoi on ne peut pasdiréctement supprimer  toute les informations relatives dans la table équipe : 
+
+-Pour respecter les contraintes d'intégrité référentielle, si on veut supprimer l'équipe d'identifiant n dans la table
+Equipe, il faut d'abord supprimmer toutes données des joueuse de cette équipe, c'est à dire tous les tuples de données 
+de la table Joueuse ayant la valeurs n comme id_equipe.
+(Respect de la hiérarchie de dépendance fonctionelle entre la clé primaire et la clé étrangère.)
+
+c) Ecrire la requête SQL qui permet d'afficher les noms et les prenoms des joueuse de l'équipe d'Angers par ordre
+Alphabétique des noms. On supposera que l'utilisateur qui écrit cette requête ne connaît pas l'identifiant de l'équipe.
+
+version avec jointure:
+
+SELECT Joueuse.nom, prenom
+FROM Joueuse
+JOIN Equipe ON
+Joueuse.id-equipe = Equipe.id-equipe
+WHERE Equipe.nom = "Angers";
+
+version avec produit cartésien:
+
+SELECT Joueuse.nom,prenom
+FROM Joueuse,Equipe
+WHERE Joueuse.id-equipe=Equipe.id-equipe
+AND Equipe.nom="Angers";
+"""
+
 # -------------------------------------------------------------------
 # D. Sujet Amérique du sud - journée 2 - 2022 - Exercice 3 (4 points)
 # -------------------------------------------------------------------

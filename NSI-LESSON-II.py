@@ -312,9 +312,9 @@ def separation(chaine,target):
 # Une fonction aui analyse un fichier et qui t'en ressors le nombre de fois que le mot clef "def " apparait
 
 
-# ------------------------------------------------------------
+# ----------------------------------------------------
 # CHAPITRE 5 : NOTIONS SUR LES BASES DE DONNEES (BDD )
-# ------------------------------------------------------------
+# ----------------------------------------------------
 
 # ---------------------------------------------------------------------------------------------------
 # CHAPITRE 5.5 : INTEGRATION AVEC L'UTILISATEUR : MODULE POUR INTERFACE GRAPHIQUE TKINTER DE PYTHON 3 
