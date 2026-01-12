@@ -316,8 +316,22 @@ def separation(chaine,target):
 # CHAPITRE 5 : NOTIONS SUR LES BASES DE DONNEES (BDD )
 # ----------------------------------------------------
 
+#Cours : 
+
 # ---------------------------------------------------------------------------------------------------
 # CHAPITRE 5.5 : INTEGRATION AVEC L'UTILISATEUR : MODULE POUR INTERFACE GRAPHIQUE TKINTER DE PYTHON 3 
 # ---------------------------------------------------------------------------------------------------
 
 # GUI = Graphical User Interface
+
+# --------------------------------------------
+# CHAPITRE 6 : NOTIONS SUR LES LISTES CHAÎNEES
+# --------------------------------------------
+
+# Liste chainées :
+# Avantage : Fractionable dans la mémoire (pas besoin de cases mémoire contigus);
+# Insértion de nouvelles donnée facile.
+# Contrainte : on stocke autant de cases mémoires pour les adresses de de nombre de données dans notre liste;
+# pour acceder a l'élément n on doit parcourirs les n éléments précedents, on ne connais pas les adresses des autres.abs
+
+#implémentation d'une liste chainées à l'aide des objets: 
