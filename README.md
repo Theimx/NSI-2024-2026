@@ -8,7 +8,7 @@
 ---
 ### *Description* :   
 Programme complet de 1ERE et TERMINAL NSI de 2024 à 2026.  
-Algoritmie; Syntaxe Python; Base de donnée relationelle; Syntaxe SQL; Programmation Orientée Objet; Structure de Données; Interfaces Graphique; Manipulation de fichier; Notion de complexité;Conventions d'écriture.   
+Algoritmie; Syntaxe Python; Base de donnée relationelle; Syntaxe SQL; Programmation Orientée Objet; Structure de Données; Interfaces Graphique; Manipulation de fichier; Notion de complexité;Conventions d'écriture,la compression, correction et le cryptage de données.   
       
 ---
 ### *Content* :  
