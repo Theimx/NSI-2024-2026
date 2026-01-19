@@ -305,7 +305,7 @@ WHERE Fabricant.id = ModeleVelo.idFabricant AND Stock > 0;
 """
 
 #
-#
+# E.
 #
 
 """ 
@@ -327,4 +327,15 @@ SELECT COUNT(*)
 FROM Eleves 
 WHERE class='T2';
 
+Q5 : 
+INSERT INTO Emprunts
+VALUES(640, 192, "9782", "2020-09-15", NULL);
+
+UPDATE Emprunts SET dateRetour="2020-09-30" WHERE idEmprunt=640;
+
+Q6 : 
+SELECT DISTINCT nom, prenom 
+FROM Eleves, Emprunts
+WHERE Eleves.idEleves=Emprunts.idEleves
+AND Eleves.classe='T2';
 """
