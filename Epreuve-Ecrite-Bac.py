@@ -338,4 +338,9 @@ SELECT DISTINCT nom, prenom
 FROM Eleves, Emprunts
 WHERE Eleves.idEleves=Emprunts.idEleves
 AND Eleves.classe='T2';
+
+Q7 : 
+SELECT nom, prenom
+FROM Eleves, Emprunts, Livres
+WHERE Eleves.idELeves=Emprunts.idEleve AND Livres.isbn=Emprunts.isbn AND titre="Les misérables";
 """
