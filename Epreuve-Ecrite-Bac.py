@@ -288,3 +288,43 @@ VALUES (10,"23/10/2021",3,6,73,78);
 # -------------------------------------------------------------------
 # D. Sujet Amérique du sud - journée 2 - 2022 - Exercice 3 (4 points)
 # -------------------------------------------------------------------
+
+"""
+jointure : 
+
+SELECT nom 
+FROM Fabricant
+JOIN ModeleVelo ON Fabricant.idFabricant = ModeleVelo.idFabricant
+WHERE Stock > 0;
+
+produit cartésien : 
+
+SELECT nom 
+FROM Fabricant,ModeleVelo
+WHERE Fabricant.id = ModeleVelo.idFabricant AND Stock > 0;
+"""
+
+#
+#
+#
+
+""" 
+Q1 : Les deux premières requêtes d'insertion ne génère pas d'erreur (si les valeurs clés primaire
+128 et 200 sont libres pour l'attribut idEleve ) en revanche, la troisième requête essaie d'insérer
+un tuple de données avec la valeur de clé primaire 128, qui est déjà utilisée; ainsi, il y a une
+erreur de nom respect des contraintes d'intégrités d'unicité de la clé primaire.
+
+Q2 : Pour insérer un tuple de données dans la relation Emprunts, le champ Empunts.idEleve, qui est
+une clé étrangère faisant référence à la clé primaire Eleves.idEleve, doit obligatoirement utiliser 
+une valeur déjà présente dans ue tuple de données de la relation Eleves. Il faut donc impérativement 
+que le tuple des données de l'élève dans la table Eleves.
+
+Q3 : 
+SELECT titre FROM Livres WHERE auteur="Molière";
+
+Q4 : 
+SELECT COUNT(*)
+FROM Eleves 
+WHERE class='T2';
+
+"""

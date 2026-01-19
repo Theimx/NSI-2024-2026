@@ -185,6 +185,12 @@ def palindrome(txt):
 # CHAPITRE 3 : NOTIONS SUR LES PILES ET LES FILES
 # ----------------------------------------------------------
 
+# Definition Pile : 
+# Une structure de données fondée sur le principe « dernier arrivé, premier sorti »
+
+# Definition File : 
+# Une structure de données fondée sur le principe « premier arrivé, premier sorti »
+
 # une implémentation du type Pile en python avec la POO
 class Pile:
 
