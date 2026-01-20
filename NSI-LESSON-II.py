@@ -283,7 +283,13 @@ def compter_lignes(file_name):
     file.close()
     return count
 
+#Une fonction qui transforme une liste de Dictionnaire Python en CSV
 def list_dict2csv(td:list, nom_fichier_csv: str, sep:str ):
+
+    #  Ne gère pas les listes vides (td = []);
+    #  Suppose que tous les dictionnaires ont les mêmes clés;
+    #  Ne gère pas les valeurs contenant le séparateur.
+
     f = open(nom_fichier_csv,"w",encoding="utf-8")
     liste_champs = []
     d = td[0]
@@ -294,6 +300,7 @@ def list_dict2csv(td:list, nom_fichier_csv: str, sep:str ):
         ligne_champs = ligne_champs + liste_champs[i] + sep
     ligne_champs = ligne_champs + liste_champs[len(liste_champs)-1] + "\n"
     f.write(ligne_champs)
+
     for d in td: 
         ligne_d = ""
         for i in range(0,len(liste_champs)-1):
@@ -304,10 +311,29 @@ def list_dict2csv(td:list, nom_fichier_csv: str, sep:str ):
         f.write(ligne_d)
     f.close()
 
-
 #Une fonction qui transforme un CSV en une liste de Dictionnaire Python
-
-#Une fonction qui transforme une liste de Dictionnaire Python en CSV
+def csv2list_dict(nom_fichier_csv: str, sep: str):
+    f = open(nom_fichier_csv, "r", encoding="utf-8")
+    
+    # Lecture de la première ligne (en-têtes)
+    ligne_champs = f.readline().strip()
+    liste_champs = ligne_champs.split(sep)
+    
+    liste_dict = []
+    
+    # Lecture des lignes de données
+    for ligne in f:
+        ligne = ligne.strip()
+        valeurs = ligne.split(sep)
+        
+        d = {}
+        for i in range(len(liste_champs)):
+            d[liste_champs[i]] = valeurs[i]
+        
+        liste_dict.append(d)
+    
+    f.close()
+    return liste_dict
 
 #Recoder la fonction Split(string,char) (créer une liste a partir d'une chaine chaque fois que le charactère cible est détécté)
 def separation(chaine,target):
@@ -341,3 +367,13 @@ def separation(chaine,target):
 # pour acceder a l'élément n on doit parcourirs les n éléments précedents, on ne connais pas les adresses des autres.abs
 
 #implémentation d'une liste chainées à l'aide des objets: 
+
+# ------------------------------------------------------------
+# CHAPÏTRE BONUS : CHIFFRER COMPRESSER ET CORRIGER DES DONNEES
+# ------------------------------------------------------------
+
+#une fonction qui chiffre des données
+
+#une fonction qui déchiffre des données
+
+#une fonction qui compresse des données

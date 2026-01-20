@@ -3,7 +3,7 @@
 # ------------------
 
 #----------------------------------------------------------------------------------------------
-# Exercice 1 : determine si une année est bissextile ou non. (Prend un entier, renvoie un Bool)
+# Sujet 1 : determine si une année est bissextile ou non. (Prend un entier, renvoie un Bool)
 def est_bissextile(annee):
     return (annee % 4 == 0) and (annee%100 != 0)  or (annee%400 ==0)
 
@@ -81,3 +81,5 @@ def Exercice3():
         assert ajouter_jours((7, 9, 2025), 365) == (7, 9, 2026)
 
 #----------------------------------------------------------------------------------------------
+
+#Sujet 2 : 
