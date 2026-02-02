@@ -1,7 +1,6 @@
+# Nombre de Sujet corrigé : 3
+# Liste des thèmes des sujets : SQL, File, Pile
 
-#
-#
-#
 
 # -------------------------------------------------------------
 # A.Sujet-Amérique-du-nord-journée 1-2022-Exercice-4 (4 points)
@@ -68,6 +67,7 @@ def produire_jeu(n):
 # ------------------------------------------------------------
 # C.Sujet-Centre-étranger-journée 1-2021-Exercice-5 (4 points)
 # --------------------------------------------------------------
+#Sujet sur les structures de données file
 
 import random 
 
@@ -115,6 +115,7 @@ def tour_de_jeu(sequence):
 # ---------------------------------------
 # A.Sujet-zéro-2021-Exercice-4 (4 points)
 # ---------------------------------------
+#Sujet sur les bases de données SQL
 
 """ Question 1 : 
     Ce sont deslogiciels de type SGBD c'est à dire 
@@ -197,6 +198,7 @@ WHERE Reservation.numT = Train.numT AND nom = "Hopper" AND prenom = "Grace";
 # -------------------------------------------------------------
 # C. Sujet Polynésie - journée 1 - 2023 - Exercice 1 (4 points)
 # -------------------------------------------------------------
+#Sujet sur les bases de données SQL
 """ Question 1:
 a)  Expliquer pourquoi la requête suivante produit une erreur lors de
     l'ajout dans la table Equipe (voir docs):
@@ -288,6 +290,7 @@ VALUES (10,"23/10/2021",3,6,73,78);
 # -------------------------------------------------------------------
 # D. Sujet Amérique du sud - journée 2 - 2022 - Exercice 3 (4 points)
 # -------------------------------------------------------------------
+#Sujet sur les bases de données SQL
 
 """
 jointure : 
@@ -307,6 +310,7 @@ WHERE Fabricant.id = ModeleVelo.idFabricant AND Stock > 0;
 #
 # E.
 #
+#Sujet sur les bases de données SQL.
 
 """ 
 Q1 : Les deux premières requêtes d'insertion ne génère pas d'erreur (si les valeurs clés primaire
@@ -344,3 +348,8 @@ SELECT nom, prenom
 FROM Eleves, Emprunts, Livres
 WHERE Eleves.idELeves=Emprunts.idEleve AND Livres.isbn=Emprunts.isbn AND titre="Les misérables";
 """
+
+# -------------------------------------------------------------------
+# A. Sujet Amérique du sud - journée 2 - 2025 - Exercice 2 (6 points)
+# -------------------------------------------------------------------
+#Sujet sur les listes chainées.

@@ -369,7 +369,7 @@ def separation(chaine,target):
 #implémentation d'une liste chainées à l'aide des objets: 
 
 # ------------------------------------------------------------
-# CHAPÏTRE BONUS : CHIFFRER COMPRESSER ET CORRIGER DES DONNEES
+# CHAPITRE BONUS : CHIFFRER COMPRESSER ET CORRIGER DES DONNEES
 # ------------------------------------------------------------
 
 #une fonction qui chiffre des données
