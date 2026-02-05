@@ -350,23 +350,27 @@ def separation(chaine,target):
 
 #Cours : 
 
-# ---------------------------------------------------------------------------------------------------
-# CHAPITRE 5.5 : INTEGRATION AVEC L'UTILISATEUR : MODULE POUR INTERFACE GRAPHIQUE TKINTER DE PYTHON 3 
-# ---------------------------------------------------------------------------------------------------
-
-# GUI = Graphical User Interface
-
 # --------------------------------------------
 # CHAPITRE 6 : NOTIONS SUR LES LISTES CHAÎNEES
 # --------------------------------------------
 
-# Liste chainées :
+# Def Liste chainées :
 # Avantage : Fractionable dans la mémoire (pas besoin de cases mémoire contigus);
 # Insértion de nouvelles donnée facile.
 # Contrainte : on stocke autant de cases mémoires pour les adresses de de nombre de données dans notre liste;
 # pour acceder a l'élément n on doit parcourirs les n éléments précedents, on ne connais pas les adresses des autres.abs
 
 #implémentation d'une liste chainées à l'aide des objets: 
+
+# -----------------------------------
+# CHAPITRE 7 : NOTIONS SUR LES ARBRES
+# -----------------------------------
+
+# Def Arbre : 
+# Un arbre est une structure de données, qui se présente sous forme de hierarchie,
+# dont chaque élément est appelé noeud, les noeuds sont en nombre finis.
+# Un arbre est structuré en niveaux et sa taille est égale au nombre de noeuds qu'il contient.
+# La hauteur de l'arbre est égale au nombre de niveaux de celui ci.
 
 # ------------------------------------------------------------
 # CHAPITRE BONUS : CHIFFRER COMPRESSER ET CORRIGER DES DONNEES
@@ -377,3 +381,9 @@ def separation(chaine,target):
 #une fonction qui déchiffre des données
 
 #une fonction qui compresse des données
+
+# -----------------------------------------------------------------------------------------------------
+# CHAPITRE BONUS : INTEGRATION AVEC L'UTILISATEUR : MODULE POUR INTERFACE GRAPHIQUE TKINTER DE PYTHON 3 
+# -----------------------------------------------------------------------------------------------------
+
+# GUI = Graphical User Interface
