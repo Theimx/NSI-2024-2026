@@ -5,7 +5,7 @@
 
 class Pile:
     """
-    Docstring for Pile
+    Implémentation Objet de la structure de donnée Pile.
     """
 
     def __init__(self):

@@ -5,7 +5,7 @@
 
 class File:
     """
-    Docstring for File
+    Implémentation Objet de la structure de donnée File.
     """
     
     def __init__(self):
