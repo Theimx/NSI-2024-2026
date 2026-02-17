@@ -4,6 +4,9 @@
 
 
 class Pile:
+    """
+    Docstring for Pile
+    """
 
     def __init__(self):
         self.__pile = []  # attribut privé

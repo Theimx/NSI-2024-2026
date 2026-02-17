@@ -4,6 +4,10 @@
 
 
 class File:
+    """
+    Docstring for File
+    """
+    
     def __init__(self):
         self.__file = []  # attribut privé
 
